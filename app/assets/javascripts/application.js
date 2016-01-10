@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+// $(document).ready(function () {
+
+// 	console.log("Sanity check");
+
+// 	$("input").click(function (e) {
+// 		console.log("click");
+// 		window.location.replace("/creatures");
+// 	});
+
+// });

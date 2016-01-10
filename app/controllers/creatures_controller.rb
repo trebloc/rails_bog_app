@@ -9,6 +9,18 @@ class CreaturesController < ApplicationController
 		render :index
 	end
 
+  	def show
+   	 # get the creature id from the url params
+    	creature_id = params[:id]
+
+    	# use 'creature_id' to find the creature in the database
+    	# and save it to an instance variable
+    	@creature = Creature.find_by_id(creature_id)
+
+    	# render the show view (it has access to the instance variable)
+    	render :show
+	end	
+
 	def new
 		@creature = Creature.new
 		render :new
@@ -66,16 +78,21 @@ class CreaturesController < ApplicationController
     	# redirect_to "/creatures/#{creature.id}"
   	end
 
-  	def show
-   	 # get the creature id from the url params
+  	def destroy
+    	# get the creature id from the url params
     	creature_id = params[:id]
 
-    	# use 'creature_id' to find the creature in the database
+    	# use `creature_id` to find the creature in the database
     	# and save it to an instance variable
-    	@creature = Creature.find_by_id(creature_id)
+    	creature = Creature.find_by_id(creature_id)
 
-    	# render the show view (it has access to the instance variable)
-    	render :show
-	end
+    	# destroy the creature
+    	creature.destroy
+
+    	# redirect to creatures index
+    	redirect_to creature_path
+    	# redirect_to creature_path is equivalent to:
+    	# redirect_to "/creatures"
+	end	
 end
 
