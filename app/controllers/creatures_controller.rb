@@ -90,7 +90,7 @@ class CreaturesController < ApplicationController
     	creature.destroy
 
     	# redirect to creatures index
-    	redirect_to creature_path
+    	redirect_to creatures_path
     	# redirect_to creature_path is equivalent to:
     	# redirect_to "/creatures"
 	end	

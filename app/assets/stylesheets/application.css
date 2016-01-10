@@ -14,3 +14,17 @@
  *= require_tree .
  *= require_self
  */
+
+.jumbotron {
+	background-image: url("http://vignette4.wikia.nocookie.net/starwars/images/d/dd/Yodalukedagobah.png");
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	height: 600px;
+}
+nav{
+	margin-top: -35px;
+}
+
+/*.jumbotron .container {
+  height: 350px;
+}*/

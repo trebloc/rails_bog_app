@@ -1,8 +1,9 @@
 <!-- app/views/creatures/index.html.erb -->
 
 <% @creatures.each do |creature| %>
-  <p>
-    <strong>Name:</strong> <%= creature.name %><br>
-    <strong>Description:</strong> <%= creature.description %>
-  </p>
+  <ul>
+    <li><strong>Name:</strong> <%= creature.name %></li>
+    <li><strong>Description:</strong> <%= creature.description %></li>
+    <li><a href="/creatures/<%= creature.id %>">Show page</a></li>
+  </ul>
 <% end %>
