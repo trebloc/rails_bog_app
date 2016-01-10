@@ -1,7 +1,9 @@
 <!-- app/views/creatures/new.html.erb -->
 
 <%= form_for :creature, url: "/creatures", method: "post" do |f| %>
-  <span class="name">Name:</span><%= f.text_field :name %>
-  <span class="description">Description:</span><%= f.text_area :description %>
-  <%= f.submit "Save Creature" %>
+  <ul>
+  	<li><span class="name">Name:<%= f.text_field :name %></span></li>
+  	<li><span class="description">Description:<%= f.text_area :description %></span></li>
+  	<li><span class="submit"><%= f.submit "Save Creature" %></span></li>
+  </ul>
 <% end %>
