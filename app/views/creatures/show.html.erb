@@ -1,10 +1,7 @@
 <!-- app/views/creatures/show.html.erb -->
 <h1>Creature</h1>	
-	
-		<ul>
-			<li><strong>Name: </strong><%= @creature.name %></li>
-			<li><strong>Description: </strong><%= @creature.description %></li>
-			<li><a href="/creatures/<%= @creature.id %>/edit">Edit</a></li>
-			<li><%= button_to "Delete", @creature, method: :delete %></li>
-		</ul>
-		<p><a href="/creatures">Home page</a></p>	
+	<p><strong>Name: </strong><%= @creature.name %></p>
+	<p><strong>Description: </strong><%= @creature.description %></p><br>
+	<p><a href="/creatures/<%= @creature.id %>/edit">Edit</a></p>
+	<p><%= button_to "Delete", @creature, method: :delete %></p><br>
+	<p><a href="/creatures">Home page</a></p><br>	
