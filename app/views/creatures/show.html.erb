@@ -1,12 +1,11 @@
 <!-- app/views/creatures/show.html.erb -->
-<div class="container">
-	<h3><%= @creature.name %></h3>
+<div class="col-md-10 col-md-offset-1">
+	<h1>Creature</h1>	
 		<ul>
-			<li><%= @creature.description %></li>
+			<li><strong>Name: </strong><%= @creature.name %></li>
+			<li><strong>Description: </strong><%= @creature.description %></li>
 			<li><a href="/creatures/<%= @creature.id %>/edit">Edit</a></li>
 			<li><%= button_to "Delete", @creature, method: :delete %></li>
 		</ul>
-		<ul>
-			<li><a href="/creatures">Home page</a></li>
-		</ul>	
+		<p><a href="/creatures">Home page</a></p>	
 </div>		

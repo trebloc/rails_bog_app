@@ -16,10 +16,11 @@
  */
 
 .jumbotron {
-	background-image: url("http://vignette4.wikia.nocookie.net/starwars/images/d/dd/Yodalukedagobah.png");
+	background-image: url("http://www.wired.com/wp-content/uploads/2015/02/MSDEMST_EC002_H.jpg");
   	background-size: cover;
   	background-repeat: no-repeat;
-  	height: 600px;
+  	height: 350px;
+	margin-auto;
 }
 nav{
 	margin-top: -35px;
