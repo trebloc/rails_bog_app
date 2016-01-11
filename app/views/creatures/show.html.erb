@@ -1,6 +1,6 @@
 <!-- app/views/creatures/show.html.erb -->
-<div class="col-md-10 col-md-offset-1">
-	<h1>Creature</h1>	
+<h1>Creature</h1>	
+	
 		<ul>
 			<li><strong>Name: </strong><%= @creature.name %></li>
 			<li><strong>Description: </strong><%= @creature.description %></li>
@@ -8,4 +8,3 @@
 			<li><%= button_to "Delete", @creature, method: :delete %></li>
 		</ul>
 		<p><a href="/creatures">Home page</a></p>	
-</div>		
